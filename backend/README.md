@@ -13,16 +13,16 @@ npm install
 ## Run API
 - With yarn:
 ```bash
-yarn dev
+yarn dev:docker
 ```
 
 - With npm:
 ```bash
-npm run dev
+npm run dev:docker
 ```
 
-# Anime management API - docker-compose
+# Anime management API - docker
 - Turn the command on the terminal:
 ```bash
-docker-compose up
+docker build -t backend-animerex .
 ```

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <script src="./verifyToken.js"></script>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../meusAnimes">Meus animes</a>
+          </li>
+          <li>
+            <span class="nav-item">Entrar</span>
+            <hr>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="forms">
+      <div class="field-title">
+        <h1>Iniciar sessão</h1>
+      </div>
+      <form id="myForm">
+        <div class="field">
+          <label for="email">
+            E-mail
+            <br>
+            <input id="email" type="email">
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="password">
+            Senha
+            <br>
+            <input id="password" type="password">
+          </label>
+        </div>
+
+        <button type="submit">Iniciar sessão</button>
+      </form>
+    </div>
+
+    <div class="create-account">
+      <span>Ainda não possui conta?</span>
+      <a id="register" href="../registerUser">Cadastrar</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

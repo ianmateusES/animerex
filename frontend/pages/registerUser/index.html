@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro User</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../meusAnimes">Meus animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../entrar">Entrar</a>
+            <hr id="selected">
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="forms">
+      <div class="field-title">
+        <h1>Cadastrar-se</h1>
+      </div>
+
+      <form id="myForm">
+        <div class="field">
+          <label for="name">
+            Nome
+            <br>
+            <input id="name" type="text">
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="email">
+            Email
+            <br>
+            <input id="email" type="email">
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="password">
+            Senha
+            <br>
+            <input id="password" type="password">
+          </label>
+        </div>
+
+        <button type="submit">Cadastrar-se</button>
+      </form>
+    </div>
+
+    <div class="create-account">
+      <span>Já possui cadastro?</span>
+      <a id="login" href="../entrar">Fazer login</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
