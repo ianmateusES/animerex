@@ -1,0 +1,28 @@
+version: '1'
+
+services:
+  frontend-animerex:
+    build:
+      context: ./frontend
+    container_name: frontend-animerex
+    ports:
+      - '80:80'
+
+  backend-animerex:
+    build:
+      context: ./backend
+    container_name: backend-animerex
+    ports:
+      - '3333:3333'
+    depends_on:
+      - mongo
+    links:
+      - mongo
+
+  mongo:
+    image: 'mongo'
+    container_name: mongodb-animerex
+    ports:
+      - '27017:27017'
+    volumes:
+      -  $HOME/dataset/data/db:/data/db
