@@ -1,0 +1,15 @@
+# Bank details
+data
+
+# Result tests
+__tests__/coverage
+
+# Project dependencies
+node_modules
+
+# Sensitive configurations
+src/config/*.js
+!src/config/.gitkeep
+
+# Yarn cash file
+*.lock
