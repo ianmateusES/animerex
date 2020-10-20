@@ -1,6 +1,10 @@
 import * as Yup from 'yup';
 import Anime from '../models/Anime';
 
+const escapeRegex = (string) => {
+  return string.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+};
+
 export default {
   async show(req, res) {
     const schema = Yup.object().shape({
@@ -12,13 +16,13 @@ export default {
       return res.status(400).json({ error: 'Validation fails' });
     }
 
-    let { name } = req.query;
+    const { name } = req.query;
     const { page = 1 } = req.query;
 
-    name = name.toLowerCase().replace(/\b(\w)/g, (s) => s.toUpperCase());
+    const regex = new RegExp(escapeRegex(name), 'gi');
 
     const animes = await Anime.paginate(
-      { name },
+      { name: regex },
       { page, limit: 10, populate: 'user_id' }
     );
 
