@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+:root {
+  --color--primary: #F78C25;
+  --color--primary--hover: #F78C25;
+  --color--secondary: #FC4519;
+  --color--tertiary: #FCBB19;
+  --color--font--nav: #707070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+header #logo {
+  margin-left: 50px;
+}
+
+#nav-bar ul {
+  display: flex;
+  margin-right: 10px;
+}
+
+#nav-bar li {
+  list-style-type: none;
+  font-size: 20px;
+  color: var(--color--font--nav);
+}
+
+#nav-bar li + li {
+  margin-left: 30px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+#nav-bar a:hover {
+  color: #ffffff;
+  background-color: var(--color--primary--hover);
+}
+
+#nav-bar a:hover + #selected {
+  display: none;
+}
+
+#nav-bar span {
+  user-select: none;
+}
+
+#nav-bar hr {
+  border: none;
+  height: 3px;
+  background-color: var(--color--primary);
+  margin-top: 2px;
+}
+
+.container {
+  margin: 80px 40px 0 40px;
+}
+
+.field-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.field-title .icon {
+  align-self: flex-start;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: var(--color--primary);
+  cursor: pointer;
+}
+
+#title-user {
+  color: var(--color--primary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#title-anime + #title-user {
+  margin-left: 10px;
+}
+
+#anime {
+  display: flex;
+  margin-right: 40px;
+  width: 100%;
+}
+
+#anime h3 {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#anime p {
+  color: var(--color--font--nav);
+}
+
+.div-img-anime {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-img-anime .img-anime {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.div-img-anime + .div-description-anime {
+  margin-left: 45px;
+}
+
+.div-description-anime {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-description-anime {
+  width: 100%;
+  height: 155px;
+}
+
+.div-duration-anime {
+  display: flex;
+  margin-bottom: 86px;
+}
+
+.div-season-anime + .div-episode-anime {
+  margin-left: 50px;
+}
+
+.div-watch-anime {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+
+.link-watch-anime {
+  padding: 10px 40px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--color--primary);
+}

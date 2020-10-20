@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus animes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <script src="./verifyToken.js"></script>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+          </li>
+          <li>
+            <span class="nav-item">Meus animes</span>
+            <hr>
+          </li>
+          <li>
+            <a class="nav-item" href="../entrar">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="field-title">
+      <h1 class="title">Meus animes</h1>
+      <button class="button-register" onclick="registerAnime()">Cadastrar</button>
+    </div>
+
+    <div id='list-anime'></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

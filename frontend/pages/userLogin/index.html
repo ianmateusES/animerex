@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <script src="./verifyToken.js"></script>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../meusAnimes">Meus animes</a>
+          </li>
+          <li>
+            <span class="nav-item">Entrar</span>
+            <hr>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div class="info-user">
+      <div id="title">
+        <h1 style="margin-right: 10px;">Bem-vindo</h1>
+        <h1 id="name-user">None</h1>
+      </div>
+
+      <div class="field">
+        <div class="field-text" onclick="updateUser()">
+          <span class="material-icons icon">edit</span>
+          <span>Editar perfil</span>
+        </div>
+        <hr>
+      </div>
+
+
+      <div class="field">
+        <div class="field-text" onclick="registerAnime()">
+          <span class="material-icons icon">control_point</span>
+          <span>Cadastrar anime</span>
+        </div>
+        <hr>
+      </div>
+
+      <div class="field">
+        <div class="field-text" onclick="exitUser()">
+          <span class="material-icons icon">directions_walk</span>
+          <span>Sair</span>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

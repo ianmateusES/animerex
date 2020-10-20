@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar animes</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <script src="./verifyToken.js"></script>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../meusAnimes">Meus animes</a>
+            <hr id="selected">
+          </li>
+          <li>
+            <a class="nav-item" href="../entrar">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="field-title">
+      <h1 class="title">Atualizar anime</h1>
+      <button class="button-register" onclick="cancelAnime()">Cancelar</button>
+    </div>
+
+    <form id="myForm">
+      <div class="inputs">
+        <div class="divison">
+          <div class="left">
+            <div class="field">
+              <label for="name">
+                Nome do anime
+                <br>
+                <input id="name" type="text">
+              </label>
+            </div>
+
+            <div class="field">
+              <labe for="img-link">
+                Link da imagem
+                <br>
+                <input id="img-link" type="text">
+              </label>
+            </div>
+
+            <div class="field">
+              <label for="watch-link">
+                Link para assistir
+                <br>
+                <input id="watch-link" type="text">
+              </label>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="field">
+              <label for="season">
+                Temporada
+                <br>
+                <input class="right" id="season" type="number">
+              </label>
+            </div>
+
+            <div class="field">
+              <label for="episode">
+                Episódio
+                <br>
+                <input id="episode" type="number">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-description">
+          <label for="description">
+            Descrição
+            <br>
+            <textarea id="description" rows="5" cols="120"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="button-submit">
+        <button type="submit">Salvar alterações</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

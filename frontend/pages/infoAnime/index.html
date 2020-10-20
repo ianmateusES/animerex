@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Animes</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header id="top-bar">
+    <div id="logo-bar">
+      <a id="logo" href="../animes"><img src="../../img/logo-anime.png" alt="anime" style="width: 100px;"></a>
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-item" href="../animes">Animes</a>
+            <hr id="selected">
+          </li>
+          <li>
+            <a class="nav-item" href="../meusAnimes">Meus animes</a>
+          </li>
+          <li>
+            <a class="nav-item" href="../entrar">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="field-title">
+      <i onclick="back()" class="material-icons icon">arrow_back_ios</i>
+      <h1 id="title-anime">None</h1>
+      <h1 id="title-user">None</h1>
+    </div>
+
+    <div id='anime'></div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

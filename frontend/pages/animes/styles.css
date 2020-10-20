@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+:root {
+  --color--primary: #F78C25;
+  --color--primary--hover: #F78C25;
+  --color--secondary: #FC4519;
+  --color--tertiary: #FCBB19;
+  --color--font--nav: #707070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+header #logo {
+  margin-left: 50px;
+}
+
+#nav-bar ul {
+  display: flex;
+  margin-right: 10px;
+}
+
+#nav-bar li {
+  list-style-type: none;
+  font-size: 20px;
+  color: var(--color--font--nav);
+}
+
+#nav-bar li + li {
+  margin-left: 30px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+#nav-bar a:hover {
+  color: #ffffff;
+  background-color: var(--color--primary--hover);
+}
+
+#nav-bar span {
+  user-select: none;
+}
+
+#nav-bar hr {
+  border: none;
+  height: 3px;
+  background-color: var(--color--primary);
+  margin-top: 2px;
+}
+
+#container {
+  margin-top: 50px;
+  width: 100vw;
+  height: 90vh;
+}
+
+.field-search {
+  width: 100%;
+  height: 300px;
+  background-color: var(--color--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-search #search {
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  border: none;
+}
+
+.input-search #search:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.input-search .button-search {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#dev h1 {
+  margin: 20px;
+}
+
+#field-dev {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.develop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.develop .photo-dev {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.develop + .develop {
+  margin-left: 50px;
+}
+
+/*
+  <div class="develop">
+    <img class="photo-dev">
+    <span class="name-dev">Nome desenvolvedor</span>
+  </div>
+*/
