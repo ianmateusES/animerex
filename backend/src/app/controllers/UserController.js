@@ -2,7 +2,6 @@ import * as Yup from 'yup';
 import User from '../models/User';
 import Anime from '../models/Anime';
 
-
 export default {
   async store(req, res) {
     const schema = Yup.object().shape({
@@ -66,11 +65,11 @@ export default {
   async destroy(req, res) {
     const { id } = req.params;
 
-    let user = await User.findById(id);
-    await Anime.deleteMany({user_id: id});
+    const user = await User.findById(id);
+
+    await Anime.deleteMany({ user_id: id });
     await user.deleteOne();
-    
+
     return res.status(200).json();
   },
-
 };
